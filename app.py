@@ -82,7 +82,7 @@ def login():
         password = request.form.get('password')
 
         # Simple demo credentials
-        if username == "admin" and password == "admin123":
+        if username == "admin" and password == "admin369":
             session['user'] = username
             return redirect(url_for('index'))
         else:
