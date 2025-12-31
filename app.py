@@ -86,9 +86,9 @@ def login():
             session['user'] = username
             return redirect(url_for('index'))
         else:
-            return render_template('login.html', error="Invalid credentials")
+            return render_template('signin.html', error="Invalid credentials")
 
-    return render_template('login.html')
+    return render_template('signin.html')
 
 @app.route('/resume')
 def resume_upload():
