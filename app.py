@@ -62,7 +62,7 @@ def recommend():
         results = [(career, 0.0) for career, _ in raw_scores]
     else:
         for career, score in raw_scores:
-            percent = round((score / total_score) * 100, 0)
+            percent = round((score / total_score) * 100)
             results.append((career, percent))
 
     results.sort(key=lambda x: x[1], reverse=True)
